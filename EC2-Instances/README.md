@@ -62,3 +62,18 @@ High performance computing (HPC) instances are purpose built to offer the best p
 
 
 -> Steps to create a these instance are same and aws charges to this instance differently.
+
+
+### AWS Region , Availability Zone CloudFront.
+###### Follow this link 
+https://aws.amazon.com/about-aws/global-infrastructure/?p=ngi&loc=1&refid=2738afd4-9401-4d18-8e3e-1b1c194dea07
+
+The AWS Cloud spans 108 Availability Zones within 34 geographic regions, with announced plans for 18 more Availability Zones and six more AWS Regions in Mexico, New Zealand, the Kingdom of Saudi Arabia, Thailand, Taiwan, and the AWS European Sovereign Cloud.
+
+#### Region 
+Region is where aws have their Data-Centre in this location.
+
+#### Availability Zone (AZs)
+
+What is latency?
+Time taken by the server to receive the request and send back to the reply.
