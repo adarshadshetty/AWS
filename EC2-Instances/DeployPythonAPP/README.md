@@ -75,7 +75,7 @@ After installation, restart your Python environment or script to make sure the n
 
 ### Click on External URL
 <div align="center">
-  <img src="./public/externalLink.png" alt="Logo" width="50%" height="50%">
+  <img src="./public/externalLink.png" alt="Logo" width="100%" height="100%">
 </div>
 
 ### Run your app continously
@@ -95,5 +95,5 @@ kill PID
 ## OutPut
 
 <div align="center">
-  <img src="./public/result.png" alt="Logo" width="50%" height="50%">
+  <img src="./public/result.png" alt="Logo" width="100%" height="100%">
 </div>
