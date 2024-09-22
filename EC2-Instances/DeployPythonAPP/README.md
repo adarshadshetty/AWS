@@ -54,4 +54,4 @@ python3 -m pip install -r requirements.txt
 python3 -m streamlit run App.py
 ```
 
-### Click on External URL
+### Click on External URL.
