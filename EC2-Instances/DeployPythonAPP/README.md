@@ -74,3 +74,26 @@ pip install lxml_html_clean
 After installation, restart your Python environment or script to make sure the new packages are properly imported.
 
 ### Click on External URL
+<div align="center">
+  <img src="./public/externalLink.png" alt="Logo" width="50%" height="50%">
+</div>
+
+### Run your app continously
+```
+nohup python3 -m streamlit run App.py
+```
+### Give Running Process 
+```
+ps -ef
+```
+
+### Kill this Process
+```
+kill PID
+```
+
+## OutPut
+
+<div align="center">
+  <img src="./public/result.png" alt="Logo" width="50%" height="50%">
+</div>
