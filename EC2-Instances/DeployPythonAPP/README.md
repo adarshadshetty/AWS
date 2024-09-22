@@ -20,7 +20,7 @@ sudo yum upgrade -y
 ```
 
 ```
-yum install git
+sudo yum install git -y
 ```
 
 ```
@@ -29,22 +29,35 @@ git clone https://github.com/Spidy20/InNews.git
 
 #### Check python & pip available in EC2 machine
 ```
-python
+sudo yum install python -y
 ```
 
 ```
-yum install python3-pip
+sudo yum install python3-pip -y
 ```
 
 ```
 python3 -m pip
 ```
 
+or 
+
+```
+pip install python-dateutil==2.8.2
+```
+
+## ReInstall Python
+```
+pip install --force-reinstall awscli
+```
+
+
 ### Install all the requirement of the application
 ```
 cd InNews/
 ```
 
+### Install all the Dependencies.
 ```
 python3 -m pip install -r requirements.txt
 ```
@@ -53,5 +66,11 @@ python3 -m pip install -r requirements.txt
 ```
 python3 -m streamlit run App.py
 ```
+## If encounter ERROR
+```
+pip install lxml[html_clean]
+pip install lxml_html_clean
+```
+After installation, restart your Python environment or script to make sure the new packages are properly imported.
 
 ### Click on External URL
