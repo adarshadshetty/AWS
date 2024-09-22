@@ -54,5 +54,11 @@ Amazon EC2 I4g instances are optimized for I/O intensive applications and are ta
 ## 6.HPC Optimized
 High performance computing (HPC) instances are purpose built to offer the best price performance for running HPC workloads at scale on AWS. HPC instances are ideal for applications that benefit from high-performance processors such as large, complex simulations and deep learning workloads.
 
-##  Use Case
+######  Use Case
 *500 Mbps network bandwidth outside of the virtual private cloud (VPC) and Amazon Simple Storage Service (Amazon S3)
+
+###### For more detail follow this link 
+ https://aws.amazon.com/ec2/instance-types/
+
+
+-> Steps to create a these instance are same and aws charges to this instance differently.
