@@ -273,6 +273,13 @@ sudo echo '<html> <body> <h1> Hello! Apache server successfully started! </h1> <
 tail -3000 /var/log/cloud-init-output.log
 ```
 
+Allow HTTP & HTTPS Request
+
+### Result 
+<div align="center">
+<img src="./public/result.png" alt="Logo" width="50%" height="50%">
+</div>
+
 
 
 
