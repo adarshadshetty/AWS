@@ -195,12 +195,12 @@ We create Route table  , that we route for igw and this route will give internet
     ```
      #### Request from outside accessible
     <div align="center">
-    <img src="./public/publicInside.png" alt="Logo" width="100%" height="100%">
+    <img src="./public/publicInside.png" alt="Logo" width="50%" height="50%">
     </div>
     
     #### Request from inside accessible
     <div align="center">
-    <img src="./public/publicOutside.png" alt="Logo" width="100%" height="100%">
+    <img src="./public/publicOutside.png" alt="Logo" width="50%" height="50%">
     </div>
 
     2. Private EC2-Instance
@@ -209,36 +209,69 @@ We create Route table  , that we route for igw and this route will give internet
 
     #### Request from not outside accessible
     <div align="center">
-    <img src="./public/privateinside.png" alt="Logo" width="100%" height="100%">
+    <img src="./public/privateinside.png" alt="Logo" width="50%" height="50%">
     </div>
     
     #### Request from inside accessible
     <div align="center">
-    <img src="./public/frompublictoprivate.png" alt="Logo" width="100%" height="100%">
+    <img src="./public/frompublictoprivate.png" alt="Logo" width="50%" height="50%">
     </div>
 
     #### How to ssh into a private EC2 machine
     <div align="center">
-    <img src="./public/howtoaccessprivateec2.png" alt="Logo" width="100%" height="100%">
+    <img src="./public/howtoaccessprivateec2.png" alt="Logo" width="50%" height="50%">
     </div>
 
     Here key is .pem file that is used to public ec2 machine
 
     #### Private EC2 machine accessed from Public EC2
     <div align="center">
-    <img src="./public/privateec2accessed.png" alt="Logo" width="100%" height="100%">
+    <img src="./public/privateec2accessed.png" alt="Logo" width="50%" height="50%">
     </div>
 
     #### Request is Going Out From Private EC2 machine
     <div align="center">
-    <img src="./public/frompublictoprivate.png" alt="Logo" width="100%" height="100%">
+    <img src="./public/frompublictoprivate.png" alt="Logo" width="50%" height="50%">
     </div>
 
 
-## EC2 User Data Script
+## EC2 User Data Script 
+<div align="center">
+<img src="./public/ec2-userdata.png" alt="Logo" width="50%" height="50%">
+</div>
+
+Why it is needed ? 
+It will run when boot tome
+
+
+##### For linux
 ```
+#!/bin/bash
+
+#install apache
+sudo yum install -y httpd
+
+#enable and start apache
+sudo systemctl enable httpd
+sudo systemctl start httpd
+
+#navigate to the html folder that apache creates on install
+cd /var/www/html
+
+sudo mkdir Css
+sudo mkdir Scripts
+
+#create index.html file and change file permissions
+touch index.html
+sudo chmod 775 index.html
+
+sudo echo '<html> <body> <h1> Hello! Apache server successfully started! </h1> </body> </html>' > index.html
 ```
-    
+
+##### Check the log
+```
+tail -3000 /var/log/cloud-init-output.log
+```
 
 
 
