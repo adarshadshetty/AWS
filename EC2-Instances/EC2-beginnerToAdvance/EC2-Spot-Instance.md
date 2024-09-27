@@ -26,3 +26,18 @@ You cannot delete or Stop the spot instances.
 If you want stop just cancel the spot request. 
 
 ### Try to do as shown in Picture. WKT
+
+## Steps 
+Do all the in custom vpc
+1. Create a Launch Template  with userdata
+2. Create a spot instance request '4 instance' with custom vpc and sg 80, 22
+3. Create 2 On-demand ec2 instance  
+4. Create a TG and includes all 4+2= 6 ec2 instance
+5. Create LB and add listener TG to this LB
+
+## Now copy the LB DNS and enter in Chrome , You will get.
+
+###### You can observe LB & TG & Spot request all working . Same DNS is sending request to all the Instances.
+<div align="center">
+  <img src="./public/spotinstanceresult.png" alt="Logo" width="100%" height="100%">
+</div>
