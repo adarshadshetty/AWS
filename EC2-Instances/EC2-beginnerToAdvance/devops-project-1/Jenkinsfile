@@ -21,15 +21,17 @@ pipeline {
         }
 
         stage('Terraform Init') {
-                    steps {
-                       withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-crendentails-adarsha']]){
-                            dir('infra') {
-                            sh 'echo "=================Terraform Init=================="'
-                            sh 'terraform init'
+            steps {
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-crendentails-adarsha']]) {
+                    dir('infra') {
+                        sh 'echo "=================Terraform Init=================="'
+                        sh 'ls -lart' // List the contents of the infra directory
+                        sh 'terraform init'
                         }
                     }
                 }
-        }
+            }
+
 
         stage('Terraform Plan') {
             steps {
