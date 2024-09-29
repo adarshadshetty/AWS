@@ -1,4 +1,4 @@
-# bucket_name = "dev-proj-1-remote-state-bucket-ada"
+bucket_name = "dev-proj-1-remote-state-bucket-ada"
 name        = "environment"
 environment = "dev-1"
 
@@ -13,4 +13,4 @@ ec2_ami_id = "ami-0e04bcbe83a83792e"
 
 ec2_user_data_install_apache = ""
 
-# domain_name = "jhooq.org"
+domain_name = "jhooq.org"
