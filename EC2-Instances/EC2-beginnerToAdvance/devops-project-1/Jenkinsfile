@@ -23,7 +23,7 @@ pipeline {
         stage('Terraform Init') {
             steps {
                 withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-crendentails-adarsha']]) {
-                    dir('infra') {
+                    dir('EC2-Instances/EC2-beginnerToAdvance/devops-project-1/infra') {
                         sh 'echo "=================Terraform Init=================="'
                         sh 'ls -lart' // List the contents of the infra directory
                         sh 'terraform init'
