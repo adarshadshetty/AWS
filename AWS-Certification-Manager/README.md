@@ -48,7 +48,7 @@ Image upto here
 
 ### A record adding 
 <div align="center">
-  <img src="./public/acm6.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/acm6.png" alt="Logo" width="50%" height="20%">
 </div>
 11. AWS Certificate Manager
 Goto -> Certificate Managet -> Request -> Give Domain Name -> DNS Validation -> RSA
@@ -57,7 +57,7 @@ Check for status of CM (Issue in CM)
 
 12. Open the LB  and Add one more listener for https , and SG with 443
 <div align="center">
-  <img src="./public/acm8.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/acm8.png" alt="Logo" width="50%" height="20%">
 </div>
 
 
