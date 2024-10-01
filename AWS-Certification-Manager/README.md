@@ -43,7 +43,7 @@ Image upto here
 
 ### Name Server redirect in DNS
 <div align="center">
-  <img src="./public/acm5.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/acm5.png" alt="Logo" width="100%" height="20%">
 </div>
 
 ### A record adding 
