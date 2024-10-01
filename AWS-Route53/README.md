@@ -1,11 +1,20 @@
 # Route53
 <div align="center">
-  <img src="./public/r1.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r1.png" alt="Logo" width="100%" height="25%">
 </div>
 
 ## Route53 services
 <div align="center">
-  <img src="./public/r2.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/l1.png" alt="Logo" width="100%" height="25%">
+</div>
+
+## Simple Routing 
+<div align="center">
+  <img src="./public/l2.png" alt="Logo" width="100%" height="25%">
+</div>
+
+<div align="center">
+  <img src="./public/r2.png" alt="Logo" width="100%" height="25%">
 </div>
 
 1. Setups Route53 hosted Zone
@@ -16,12 +25,12 @@
 
 ## Name server configuration
 <div align="center">
-  <img src="./public/r3.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r3.png" alt="Logo" width="100%" height="25%">
 </div>
 
 ## First Demo 
 <div align="center">
-  <img src="./public/r4.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r4.png" alt="Logo" width="100%" height="25%">
 </div>
 
 ### Steps
@@ -42,7 +51,7 @@ sudo systemctl restart apache2
 
 4. Enter your domain your IP address now pointing to a Domain Name Server and keep the TTL
 <div align="center">
-  <img src="./public/r7.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r7.png" alt="Logo" width="100%" height="25%">
 </div>
 
 
@@ -51,18 +60,18 @@ Problem with IP address is when we add the another instance it not possible to r
 
 ##### WorkFlow with Weighted Route
 <div align="center">
-  <img src="./public/r8.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r8.png" alt="Logo" width="100%" height="25%">
 </div>
 
 ### Custom VPC minimal networking setting !!!
 <div align="center">
-  <img src="./public/r7.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r7.png" alt="Logo" width="100%" height="25%">
 </div>
 1. SetUp Custom VPC for LB , 2 public & 1 private subnet
 
 ##. What we done 
 <div align="center">
-  <img src="./public/r5.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r5.png" alt="Logo" width="100%" height="25%">
 </div>
 
 2. After this
@@ -70,13 +79,13 @@ Goto Route53 -> HostedZone -> Click Your HostedZone -> Create New Record for LB 
 
 #### Result
 <div align="center">
-  <img src="./public/r8.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r8.png" alt="Logo" width="100%" height="25%">
 </div>
 
 # Weighted Routing 
 #### We defining the percentage to route traffic to the load balance 
 <div align="center">
-  <img src="./public/r7.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r7.png" alt="Logo" width="100%" height="25%">
 </div>
 
 ### Steps
@@ -86,13 +95,13 @@ Goto Route53 -> HostedZone -> Click Your HostedZone -> Create New Record for LB 
 3. Create LB
 4. Route53 -> create a record with weighted option -> divide the vpc cidr to 50% 255 -> 128 + 128 , for different LB  -> create
 <div align="center">
-  <img src="./public/r10.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r10.png" alt="Logo" width="100%" height="25%">
 </div>
 
 &
 
 <div align="center">
-  <img src="./public/r8.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r8.png" alt="Logo" width="100%" height="25%">
 </div>
 
 & 
@@ -105,13 +114,13 @@ Goto Route53 -> HostedZone -> Click Your HostedZone -> Create New Record for LB 
 
 ### Result
 <div align="center">
-  <img src="./public/r11.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r11.png" alt="Logo" width="100%" height="25%">
 </div>
 
 
 # Geolocation Routing  (Sweden & India) (India & Japan) I am using India and Japan 
 <div align="center">
-  <img src="./public/r12.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r12.png" alt="Logo" width="100%" height="25%">
 </div>
 
 1. Keep everything same and just delete weighted record.
@@ -126,11 +135,11 @@ Goto Route53 -> HostedZone -> Click Your HostedZone -> Create New Record for LB 
 
 ### 1nd Machine is Located in India , And I am Browsing from India 
 <div align="center">
-  <img src="./public/r14.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r14.png" alt="Logo" width="100%" height="25%">
 </div>
 
 ### 2nd Machine is Located in India , And I am Browsing from India 
 <div align="center">
-  <img src="./public/r15.png" alt="Logo" width="100%" height="50%">
+  <img src="./public/r15.png" alt="Logo" width="100%" height="25%">
 </div>
 
