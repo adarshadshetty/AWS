@@ -1,6 +1,6 @@
 # AWS CICD PIPEPLINE
 <div align="center">
-  <img src="./public/cicd.jpg" alt="Logo" width="100%" height="50%">
+  <img src="./PUBLIC/cicd.jpg" alt="Logo" width="100%" height="50%">
 </div>
 
 1. Create AWS CodeDeploy Application 
@@ -55,12 +55,12 @@ sudo chmod 777 /var/run/docker.sock
 ```
 30. Result of deployment  
 <div align="center">
-  <img src="./public/deployment.png" alt="Logo" width="100%" height="50%">
+  <img src="./PUBLIC/deployment.png" alt="Logo" width="100%" height="50%">
 </div>
 
 ### Build Stage 
 <div align="center">
-  <img src="./public/buildStage.png" alt="Logo" width="100%" height="50%">
+  <img src="./PUBLIC/buildStage.png" alt="Logo" width="100%" height="50%">
 </div>
 
 ## 31. Go to code pipeline and add one more stage
@@ -78,7 +78,7 @@ sudo docker images
 sudo docker ps
 ```
 <div align="center">
-  <img src="./public/docker.png" alt="Logo" width="100%" height="50%">
+  <img src="./PUBLIC/docker.png" alt="Logo" width="100%" height="50%">
 </div>
 
 35. Code Deploy failed because 
@@ -88,10 +88,10 @@ sudo docker ps
     - we use stop container
 
 <div align="center">
-  <img src="./public/error.png" alt="Logo" width="100%" height="50%">
+  <img src="./PUBLIC/error.png" alt="Logo" width="100%" height="50%">
 </div>
 
 ## Result 
 <div align="center">
-  <img src="./public/pipeline.png" alt="Logo" width="100%" height="50%">
+  <img src="./PUBLIC/pipeline.png" alt="Logo" width="100%" height="50%">
 </div>
