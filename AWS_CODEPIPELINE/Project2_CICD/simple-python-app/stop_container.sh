@@ -1,5 +1,5 @@
-#!/bin/bash
-set -e
+# #!/bin/bash
+# set -e
 
-# Stop the running container (if any)
-echo "Hi"
+# # Stop the running container (if any)
+# echo "Hi"
