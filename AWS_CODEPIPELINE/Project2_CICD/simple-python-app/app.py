@@ -8,4 +8,5 @@ def hello():
 
 if __name__ == '__main__':
     # Bind to 0.0.0.0 to make it externally accessible
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5000)
+
