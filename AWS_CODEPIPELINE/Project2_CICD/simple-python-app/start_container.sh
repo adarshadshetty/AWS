@@ -1,8 +1,8 @@
-#!/bin/bash
-set -e
+# !/bin/bash
+# set -e
 
-# Pull the Docker image from Docker Hub
-echo
+# # Pull the Docker image from Docker Hub
+# echo
 
-# Run the Docker image as a container
-echo
+# # Run the Docker image as a container
+# echo
