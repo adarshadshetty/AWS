@@ -7,5 +7,5 @@ def hello():
     return 'Hello, world!'
 
 if __name__ == '__main__':
-    app.run()
-
+    # Bind to 0.0.0.0 to make it externally accessible
+    app.run(host='0.0.0.0')
